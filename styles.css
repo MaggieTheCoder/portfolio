@@ -1,0 +1,25 @@
+body {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    text-align:center;
+    justify-content: space-between;
+}
+
+.profile {
+    position:relative;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+}
+
+.child3
+{
+    text-align: center;
+}
