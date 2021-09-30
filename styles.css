@@ -1,25 +1,88 @@
+
 body {
-    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    background-color: #FFA3A5;
+    height: 100%;
 }
 
+#photo-A {
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+}
+img figcaption {
+    text-align: center;
+}
+
+
+h2{
+    text-align:center;
+    grid-area:"h2"
+}
+
+h3 {
+
+    text-align:center;
+}
+
+.header {
+    grid-area: "header"
+}
 
 nav {
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
     text-align:center;
-    justify-content: space-between;
+    background-color: #ffdc5e;
+    
 }
 
-.profile {
-    position:relative;
-    border-radius: 50%;
-    height:200px;
-    width:200px;
-}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px;
+    gap: 0px 10px;
+    align-content: center;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "area area";
+  }
+  
+  .area {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo-1 photo-2";
+    grid-area: area;
+  }
+  
+  .photo-1 { grid-area: photo-1; }
+  
+  .photo-2 { grid-area: photo-2; }
+  
 
-.child3
+
+.contact .page
 {
     text-align: center;
+    color: #ff69eb;
+    background-color: #ffdc5e;
+     
 }
+
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  footer {
+    background-color: #ffdc5e;
+    text-align: center;
+    font-size: 12px;   
+  }
