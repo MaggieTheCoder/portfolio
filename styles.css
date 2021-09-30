@@ -26,6 +26,11 @@ h3 {
     text-align:center;
 }
 
+p {
+    
+    text-align:center;
+}
+
 .header {
     grid-area: "header"
 }
@@ -61,9 +66,13 @@ nav {
     grid-area: area;
   }
   
-  .photo-1 { grid-area: photo-1; }
+  .photo-1 { grid-area: photo-1;
+                height: 200px;
+                width: 200px; }
   
-  .photo-2 { grid-area: photo-2; }
+  .photo-2 { grid-area: photo-2;
+    height: 200px;
+    width: 200px; }
   
 
 
@@ -84,5 +93,16 @@ nav {
   footer {
     background-color: #ffdc5e;
     text-align: center;
-    font-size: 12px;   
+    font-size: 18px;   
+  }
+  .material-icons.md-18 { font-size: 18px; }
+
+  .twitter-icon {
+    color: #1DA1F2;
+    height: 100px;
+    width: 100px;
+  }
+
+  .twitter-icon:hover {
+    color: #657786;
   }
