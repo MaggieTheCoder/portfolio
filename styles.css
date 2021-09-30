@@ -2,7 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    background-color: #FFA3A5;
+    background-color: #C7E4C6;
     height: 100%;
 }
 
@@ -39,7 +39,7 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
     text-align:center;
-    background-color: #ffdc5e;
+    background-color: #E7E9B8
     
 }
 
@@ -80,18 +80,12 @@ nav {
 {
     text-align: center;
     color: #ff69eb;
-    background-color: #ffdc5e;
+    background-color:#7F91B35e;
      
 }
 
-@media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
-
   footer {
-    background-color: #ffdc5e;
+    background-color: #767F2D;
     text-align: center;
     font-size: 18px;   
   }
@@ -103,6 +97,9 @@ nav {
     width: 100px;
   }
 
-  .twitter-icon:hover {
-    color: #657786;
+ 
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
   }
