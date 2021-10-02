@@ -1,105 +1,63 @@
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    background-color: #C7E4C6;
-    height: 100%;
+html {
+  box-sizing: border-box;
 }
 
-#photo-A {
-    border-radius: 50%;
-    height:200px;
-    width:200px;
-}
-img figcaption {
-    text-align: center;
-}
-
-
-h2{
-    text-align:center;
-    grid-area:"h2"
+a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
 }
 
-h3 {
-
-    text-align:center;
+a:hover {
+  background:rgb(248, 133, 1);
 }
 
-p {
-    
-    text-align:center;
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:50px;
 }
 
-.header {
-    grid-area: "header"
+.flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: violet;
+
 }
 
-nav {
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    text-align:center;
-    background-color: #E7E9B8
-    
+.flex-nav li {
+  flex: 3;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 150px;
-    gap: 0px 10px;
-    align-content: center;
-    justify-content: center;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "area area";
+.flex-nav .social {
+  flex:1;
+}
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
   }
-  
-  .area {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 150px;
-    gap: 0px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "photo-1 photo-2";
-    grid-area: area;
-  }
-  
-  .photo-1 { grid-area: photo-1;
-                height: 200px;
-                width: 200px; }
-  
-  .photo-2 { grid-area: photo-2;
-    height: 200px;
-    width: 200px; }
-  
-
-
-.contact .page
-{
-    text-align: center;
-    color: #ff69eb;
-    background-color:#7F91B35e;
-     
-}
-
-  footer {
-    background-color: #767F2D;
-    text-align: center;
-    font-size: 18px;   
-  }
-  .material-icons.md-18 { font-size: 18px; }
-
-  .twitter-icon {
-    color: #1DA1F2;
-    height: 100px;
-    width: 100px;
+  .flex-nav li {
+    flex: 1 1 50%;
   }
 
- 
-  @media screen and (max-width: 768px) {
-    .column {
-      width: 100%;
-    }
-  }
+  .flex-nav .social {
+    flex: 1 1  15%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+.flex-nav li {
+  flex-basis: 100%;
+}
+}
