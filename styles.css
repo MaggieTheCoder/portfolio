@@ -1,6 +1,30 @@
 
 html {
+  font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid greenyellow;
+  background-color: #FF6A00;
+  flex-direction: column;
+
+}
+
+figcaption  {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-photo {
+  border-radius: 50%;
 }
 
 a {
@@ -14,23 +38,21 @@ a {
   width: 100%;
   text-align: center;
   transition:all 0.5s;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
-  background:rgb(248, 133, 1);
+  background:#FF6A00;
 }
 
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding:50px;
-}
+
 
 .flex-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-flow: row;
   background-color: violet;
 
 }
