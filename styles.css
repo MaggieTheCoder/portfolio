@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-image: linear-gradient(260deg, #DEAEDC, #fcaf5d);
 
 }
 
@@ -12,6 +13,7 @@ html {
   border: 1px solid greenyellow;
   background-color: #FF6A00;
   flex-direction: column;
+  font-size: 2vh;
 
 }
 
@@ -46,7 +48,6 @@ a:hover {
 }
 
 
-
 .flex-nav ul {
   list-style: none;
   margin: 0;
@@ -59,6 +60,7 @@ a:hover {
 
 .flex-nav li {
   flex: 3;
+  font-size: 2vh;
 }
 
 .flex-nav .social {
@@ -82,4 +84,14 @@ a:hover {
 .flex-nav li {
   flex-basis: 100%;
 }
+}
+
+body {
+  margin: 0;
+  
+}
+
+main {
+  margin: 5vw;
+  font-size: 3vh;
 }
